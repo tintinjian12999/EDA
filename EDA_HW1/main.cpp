@@ -23,6 +23,7 @@ int main (int argc, char *argv[])
 void read_line(std::vector<std::vector<int>>& data, std::ifstream& file, int& v, int& L) 
 {
     file >> v >> L;
+    file.ignore(1, '\n'); // Ignore the '/n' in first line
     std::string line;
     while (std::getline(file, line)) {
         std::vector<int> row;
