@@ -17,9 +17,12 @@ int main (int argc, char *argv[])
     int v = 0, L = 0;
     std::vector<std::vector<int>> data;
     read_line (data, file, v, L);
+<<<<<<< HEAD
     std::vector<struct node> nodes(v);
     node_init(data, nodes);
     ASAP(nodes);
+=======
+>>>>>>> 9bf3c2e6e9d77c228004716e251467126b81cdde
     return 0;
 } 
 
